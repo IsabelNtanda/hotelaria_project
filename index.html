@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotelaria</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <img src="./assets/img/logo.svg" class="logo" alt="" />
+        <nav class="nav-bar">
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">Servives</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Room</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <a href="" class="buy-now">Book Now</a>
+        </nav>
+        <div class="bx bx-menu" id="menu-icon" onclick="menuToggle()"></div>
+      </div>
+    </header>
+    <div class="content-top">
+      <div class="container">
+        <h1>Open the door for a spacious living -</h1>
+        <div class="content-left">
+          <ul>
+            <li>
+              Book a hotel service
+              <span>></span>
+            </li>
+            <li>
+              Book a hotel service
+              <span>></span>
+            </li>
+            <li>
+              Book a hotel service
+              <span>></span>
+            </li>
+            <li>
+              Book a hotel service
+              <span>></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class='fundo'>
+      <img src="./assets/img/fundo.svg" alt="">
+    </section>
+    <script>
+      function menuToggle() {
+        const menu = document.querySelector('#menu-icon')
+        const navbar = document.querySelector('.nav-bar')
+        navbar.classList.toggle('active')
+        menu.classList.toggle('bx-x')
+      }
+    </script>
+  </body>
+</html>
